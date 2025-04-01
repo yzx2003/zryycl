@@ -32,10 +32,10 @@
 
 #### 数学表达形式
 
-假设我们有一个邮件集合D，其中包含n封邮件。对于每一封邮件$d_i（(i = 1, 2, \cdots, n)）$
+假设我们有一个邮件集合D，其中包含n封邮件。对于每一封邮件$ d_i（(i = 1, 2, \cdots, n)）$
 ，我们选择k个高频词作为特征。对于第i封邮件$d_i$，其特征向量表示为$X_i=(x_{i1}, x_{i2}, \cdots, x_{ik})$。其中，$x_{ij}$
 表示第j个高频词在第i封邮件$d_i$中出现的次数，用数学公式表示为：
-$X_i=\begin{pmatrix}x_{i1}\\x_{i2}\\\vdots\\x_{ik}\end{pmatrix}  (i = 1,2,\cdots,n)，(j = 1,2,\cdots,k)$。
+$X_i=\begin{pmatrix}x~~_~~{i1}\\x_{i2}\\\vdots\\x_{ik}\end{pmatrix}  (i = 1,2,\cdots,n)，(j = 1,2,\cdots,k)$。
 
 ### TF-IDF 特征加权
 
@@ -45,16 +45,16 @@ TF-IDF（Term Frequency - Inverse Document Frequency）是一种用于信息检�
 #### 数学表达形式
 
 词频（TF）表示某个词w在一篇文档d中出现的频率。计算公式为：
-$TF(w, d)=\frac{count(w, d)}{\sum_{w' \in d}count(w', d)}$
+$$TF(w, d)=\frac{count(w, d)}{\sum_{w' \in d}count(w', d)}$$
 其中，$count(w, d)$表示词w在文档d中出现的次数，$\sum_{w' \in d}count(w', d)$表示文档d中所有词出现的次数之和。
 
 逆文档频率（IDF）表示某个词w在整个文档集合D中的普遍重要性。计算公式为：
-$IDF(w)=\log\frac{|D|}{|\{d \in D: w \in d\}|}$
+$$IDF(w)=\log\frac{|D|}{|\{d \in D: w \in d\}|}$$
 其中，$|D|$表示文档集合D中的文档总数，$|\{d \in D: w \in d\}|$表示包含词w的文档数。
 
 TF-IDF 值：
 一个词w在文档d中的 TF-IDF 值是词频（TF）和逆文档频率（IDF）的乘积，即：
-$TF - IDF(w,d)=TF(w,d)\times IDF(w)$
+$$TF - IDF(w,d)=TF(w,d)\times IDF(w)$$
 
 #### 两种方法的差异
 
