@@ -45,7 +45,7 @@
 其特征向量表示为 $X_i = (x_{i1}, x_{i2}, \cdots, x_{ik})$  。这里 $x_{ij}$ 代表第 $j$ 个高频词在第 $i$ 封
 邮件 $d_i$ 中出现的次数。从数学公式角度，可将特征向量 $X_i$ 表示
 为： 
- $$X_i=\begin{pmatrix}x_{i1}\\x_{i2}\\\vdots\\x_{ik}\end{pmatrix}$$  
+ $$X_i = \begin{pmatrix}x_{i1}\\x_{i2}\\\vdots\\x_{ik}\end{pmatrix}$$  
 其中， $i$ 的取值
 范围是从 $1$ 到 $n$ ，表示邮件的序号； $j$ 的取值范围是从 $1$ 到 $k$ ，表示所选高频词的序号。
 ### TF-IDF 特征加权
