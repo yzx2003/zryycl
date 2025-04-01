@@ -48,7 +48,15 @@
 
 
 
+
+
+
+
   $$    \text   X_i = \begin{pmatrix}x_{i1}\\x_{i2}\\\vdots\\x_{ik}\end{pmatrix}  $$ 
+
+
+
+
 
 
 
